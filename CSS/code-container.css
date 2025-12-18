@@ -1,0 +1,39 @@
+.code-container {
+  position: relative;
+  max-width: 800px;
+  margin: 25px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #0d1117;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: transparent;
+  border: none;
+  background-color: #0d1117;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.copy-btn:hover {
+  background-color: #171d25;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95vw;
+    padding: 15px;
+  }
+
+}

@@ -1,0 +1,57 @@
+:root {
+  --bg-sheet-main: white;
+  --bg-body: rgb(3, 0, 39);
+
+  --primary-color: rgb(0, 100, 200);
+  --secondary-color: rgb(105, 105, 105);
+  --exercise-color: rgb(0, 128, 85);
+  --warning-color: rgb(255, 199, 15);
+  --danger-color: rgb(200, 0, 17);
+
+  /* Variables para fondos de notas */
+  --note-info-bg: #e6f7ff;
+  --note-danger-bg: #ffe6e6;
+  --note-secondary-bg: #eeeeee;
+  --note-exercise-bg: #e7fff4;
+  --note-warning-bg: #fff8df;
+
+
+  --tab-secondary-color: #f8f9fa;
+  --tab-hover-color: #f1f7ff;
+  --tab-border-color: #ddd;
+  --text-color: #333;
+
+  --code-color-simple: #001369;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.377); */
+}
+
+html {
+  font-size: 16px;
+  background-color: var(--bg-body);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hljs-string {
+  color: #94bfff;
+}
+
+.hljs-literal, .hljs-number, .hljs-variable, .visible-tab,
+.visible-newline {
+  color: #e79213;
+}
+
+.hljs-built_in, .hljs-symbol{
+  color: #cda4fa;
+}

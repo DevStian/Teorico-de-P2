@@ -1,0 +1,50 @@
+/* Ahora el CSS de enlaces puede usar las variables RGB */
+.link-simple {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 1px 2px;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.link-simple:hover {
+  text-decoration: underline;
+  background-color: var(--note-info-bg);
+}
+
+.link-simple.info {
+  color: var(--primary-color);
+}
+
+.link-simple.exercise {
+  color: var(--exercise-color);
+}
+
+.link-simple.warning {
+  color: var(--warning-color);
+}
+
+.link-simple.danger {
+  color: var(--danger-color);
+}
+
+.link-simple.secondary {
+  color: var(--secondary-color);
+}
+
+.link-simple.exercise:hover {
+  background-color: var(--note-exercise-bg)
+}
+
+.link-simple.warning:hover {
+  background-color: var(--note-warning-bg);
+}
+
+.link-simple.danger:hover {
+  background-color: var(--note-danger-bg);
+}
+
+.link-simple.secondary:hover {
+  background: var(--note-secondary-bg);  
+}

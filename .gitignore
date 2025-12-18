@@ -1,0 +1,9 @@
+# C / C++
+*.cpp
+
+# HTML que no quiero subir
+Base.html
+version_1.html
+
+# Ejecutables compilados
+CSS/pre

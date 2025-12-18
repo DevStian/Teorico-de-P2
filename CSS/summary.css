@@ -1,0 +1,175 @@
+.summary-sheet {
+  background-color: var(--bg-sheet-main);
+  border-radius: 5px;
+  padding: 20px 45px;
+  margin-bottom: 40px;
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: var(--primary-color);
+    padding: 10px 0px;
+    
+  }
+
+  h2 {
+    border-bottom: 3px solid var(--primary-color);
+    padding: 5px 0;
+    margin-bottom: 25px;
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4{
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  ul,
+  ol {
+    padding: 10px 50px;
+  }
+
+  li {
+    margin: 15px 0;
+    padding: 0 0 0 10px;
+  }
+
+  .li-num li {
+    list-style: decimal;
+    &::marker {
+      color: var(--primary-color);
+    }
+  }
+}
+
+.key-feature {
+  display: inline-block;
+  background-color: var(--note-exercise-bg);
+  color: var(--primary-color);
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  padding: 2px 5px 0;
+  font-weight: bold;
+}
+
+.text-danger {
+  color: var(--danger-color);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-success {
+  color: var(--success-color);
+}
+
+.text-warning {
+  color: var(--warning-color);
+}
+
+/* Estilos base para todas las notas */
+.note {
+  border-left: 4px solid;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 0 5px 5px 0;
+  position: relative;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.note-title {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.note-content {
+  margin-left: 0;
+}
+
+.note-content p {
+  margin-bottom: 10px;
+}
+
+.note-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Tipos específicos de notas */
+.note-info {
+  background-color: var(--note-info-bg);
+  border-color: var(--primary-color);
+}
+
+.note-info .note-title {
+  color: var(--primary-color);
+}
+
+.note-secondary {
+  background-color: var(--note-secondary-bg);
+  border-color: var(--secondary-color);
+}
+
+.note-secondary .note-title {
+  color: var(--secondary-color);
+}
+
+.note-exercise {
+  background-color: var(--note-exercise-bg);
+  border-color: var(--exercise-color);
+}
+
+.note-exercise .note-title {
+  color: var(--exercise-color);
+}
+
+.note-warning {
+  background-color: var(--note-warning-bg);
+  border-color: var(--warning-color);
+}
+
+.note-warning .note-title {
+  color: var(--warning-color);
+}
+
+.note-danger {
+  background-color: var(--note-danger-bg);
+  border-color: var(--danger-color);
+}
+
+.note-danger .note-title {
+  color: var(--danger-color);
+}
+
+.data-ex {
+  width: 50%;
+  color: var(--primary-color);
+
+  p {
+    background-color: var(--note-info-bg);
+    padding: 10px 20px;
+    margin: 5px 0 0 0;
+    border-radius: 5px;
+  }
+  summary {
+    cursor: pointer;
+    border-bottom: 2px solid var(--primary-color);
+    font-weight: bold;
+  }
+}
