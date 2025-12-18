@@ -12,8 +12,11 @@
 
     <!-- Highlight.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
-    <script src="JS/dasd.js"></script>
-        <script
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/c.min.js"></script> -->
+    <!-- Uso esta que es una modificacion -->
+    <script src="JS/c.min.js"></script> 
+
+    <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js"
     ></script>
@@ -22,6 +25,7 @@
     <link rel="stylesheet" href="CSS/code-container.css" />
     <link rel="stylesheet" href="CSS/link.css" />
     <link rel="stylesheet" href="CSS/tabla.css" />
+
     <script>
       function initHighlightedCode() {
         // ejemplo
@@ -60,32 +64,106 @@
   </head>
   <body>
     <section class="summary-sheet">
-      <h3>Introduccion a C/C++</h3>
+      <h2>Titulo de la hoja de resumen</h2>
       <p>
-        El curso de Programación 2 en la Fing, usa una mezcla de los lenguajes
-        de C y C++ internamente le llaman C*, la razon es que como base se usa C
-        pero se toman algunas cosas de C++ para hacer la transicion entre Pascal
-        y este nuevo lenguaje un poco mas leve el cambio, dentro de esta
-        introduccion iremos viendo todo al detalle pero en un resumen seria.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis rerum
+        delectus repudiandae ducimus. Pariatur debitis officia dolor
+        perspiciatis sed quibusdam deleniti quasi ex sapiente aperiam animi, id
+        placeat, saepe inventore!
+        <a href="#" class="link-simple">Enlace normal</a>
+        <a href="#" class="link-simple exercise">Enlace ejercicio</a>
+        <a href="#" class="link-simple warning">Enlace advertencia</a>
       </p>
-      <details open class="data-ex">
-        <summary>Lorem ipsum dolor sit amet.</summary>
-        <p>
-          El lenguaje C*, es C con algunas utilidades/formas de C++, la primera
-          es como define un Parámetro de Referencia esto es orientado para que
-          sea parecido a Pascal. Luego, C no tiene el tipo bool pero C++ si, eso
-          también lo usamos.... (Ahora mismo no me acurdo que mas).
-        </p>
-      </details>
-    </section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
+        voluptatem cupiditate dolor cumque atque reprehenderit quas iusto
+        veritatis! Animi quaerat veniam maiores ullam quo fuga quas eius magni
+        debitis quam!
+      </p>
+      <article>
+        <h3>Lista de Pasos</h3>
+        <ul class="li-num">
+          <li>Abre tu IDE de preferencia</li>
+          <li>
+            Crea un archivo con la extensión ".cpp" (por ejemplo: holaMundo.cpp)
+          </li>
+          <li>
+            Copia lo que está en el recuadro de código aquí abajo y pégalo
+          </li>
+          <li>
+            Compilemos el archivo con el comando por Terminal:
+            <span class="key-feature">g++ holaMundo.cpp -o holaMundo</span>
+          </li>
+          <li>
+            Ejecuta el programa:
+            <span class="key-feature">./holaMundo</span> (Linux/Mac) o
+            <span class="key-feature">holaMundo.exe</span> (Windows)
+          </li>
+          <li>
+            Tambien podrias directamente
+            <span class="key-feature"
+              >g++ holaMundo.cpp -o holaMundo
+              <span class="key-feature text-danger">&&</span> ./holaMundo</span
+            >
+            Compila y Ejecuta en una sola linea!!
+          </li>
+        </ul>
+      </article>
+      <!-- Nota informativa principal (azul) -->
+      <aside class="note note-info" role="note" aria-label="Nota informativa">
+        <strong class="note-title">Nota:</strong>
+        <div class="note-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dolores.
+        </div>
+      </aside>
 
+      <!-- Nota informativa secundaria (gris) -->
+      <aside
+        class="note note-secondary"
+        role="note"
+        aria-label="Información adicional"
+      >
+        <strong class="note-title">Complemento:</strong>
+        <div class="note-content">
+          lorrem ipsum dolor sit amet consectetur adipisicing elit. At, dolores.
+        </div>
+      </aside>
+
+      <!-- Nota de ejercicio (verde) -->
+      <aside
+        class="note note-exercise"
+        role="note"
+        aria-label="Ejercicio sugerido"
+      >
+        <strong class="note-title">Ejercicio:</strong>
+        <div class="note-content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, fugit.
+        </div>
+      </aside>
+
+      <!-- Nota de advertencia (amarillo/naranja) -->
+      <aside
+        class="note note-warning"
+        role="note"
+        aria-label="Advertencia importante"
+      >
+        <strong class="note-title">¡Atención!</strong>
+        <div class="note-content">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+          saepe!
+        </div>
+      </aside>
+
+      <!-- Nota de peligro/error (rojo) -->
+      <aside class="note note-danger" role="note" aria-label="Posible error">
+        <strong class="note-title">¡Peligro!</strong>
+        <div class="note-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, velit!
+        </div>
+      </aside>
+    </section>
     <section class="summary-sheet">
-      <h3>Los Tipos Elementales</h3>
-      <p>
-        Como en todos los lenguajes simepre existen un arcenal de tipos basicos
-        de los cuales se construyen el resto, para el curso solo se utilizaran
-        los siguientes
-      </p>
+      <h3>Hola este es un titulo de prueba</h3>
       <table class="table-primary">
         <thead>
           <tr>
@@ -126,31 +204,10 @@
           </tr>
         </tbody>
       </table>
-      <!-- Nota informativa principal (azul) -->
-      <aside class="note note-info" role="note" aria-label="Nota informativa">
-        <h5 class="note-title">Nota:</h5>
-        <div class="note-content">
-          Observar que<span class="key-feature">unsigned</span> es un prefijo
-          que provoca ignorar el signo de la variable<span class="key-feature"
-            >int</span
-          >y ahora se puede guardar numeros mucho mas grandes que antes. Al
-          ignorar el signo es un espacio libre en memoria y es espacio permite
-          duplicar la cota del numero mas grande que se puede guardar.
-        </div>
-      </aside>
     </section>
 
     <section class="summary-sheet">
-      <h3>Los Arreglos Estáticos</h3>
-      <p>
-        Igual que en Pascal, un arreglo es una secuencia de elementos del mismo
-        tipo, organizados en posiciones consecutivas de memoria de un largo N.
-        La gran diferencia está en que los índices en C/C++
-        <strong>siempre empiezan en 0</strong> y terminan en
-        <strong>N - 1</strong>.
-      </p>
-
-      <h4>Declaración de Arreglos Estáticos</h4>
+      <h2>hola promedioTemperaturas</h2>
       <div class="code-container">
         <button
           class="copy-btn hljs"
@@ -174,1117 +231,16 @@
             />
           </svg>
         </button>
-        <pre><code class="language-c" id="codigo2" data-trim>
-            #include &lt;stdio.h&gt;
-
-            int main()
-            {
-                // Arreglo de 3 enteros
-                int numeros[3] = {5, 6, 7};
-
-                // Arreglo de caracteres, carácter por carácter.
-                char saludo[11] = {'H', 'o', 'l', 'a', ' ', 'M', 'u', 'n', 'd', 'o', '!'};
-
-                // La forma más común es usando string literal
-                // Explicación de por que 12 en la Nota!!
-                char saludoLiteral[12] = "Hola Mundo!"; 
-
-                // Arreglo de booleanos (en C++ bool viene por defecto)
-                bool estados[5];
-
-                // Asignación directa
-                estados[0] = true;
-
-                // Asignación con expresión condicional
-                for (int i = 1; i &lt; 5; i++) {
-                    // Tal vez te parezca raro, mas a delante explicaremos esto
-                    estados[i] = (estados[i - 1] * 1 && (i % 2 == 0));
-                }
-
-                // Mostrar resultados
-                for (int i = 0; i &lt;= 4; ++i) {
-                    printf("El valor en %d es %d\n", i, estados[i]);
-                }
-
-                return 0;
-            }
-            // Compilación y ejecución:
-            // g++ ./nombreArchivo.cpp -o nombreCompilacion && ./nombreCompilacion
-    </code></pre>
-      </div>
-
-      <aside class="note note-info" role="note" aria-label="Nota informativa">
-        <strong class="note-title">Nota</strong>
-        <div class="note-content">
-          En C/C++, las cadena de texto literales como
-          <span class="key-feature">"Hola Mundo!"</span> tienen un carácter
-          invisible al final llamado <strong>null terminator</strong> (<span
-            class="key-feature"
-            >'\0'</span
-          >). Este carácter marca el fin de la cadena de texto. Por eso
-          necesitamos 12 posiciones: 11 para los caracteres visibles y 1 para el
-          terminador nulo. La razón principal de esto es que existen funciones
-          que utilizan ese cáracter extra sin el podrian dar error. Intenta
-          agregar en el anterior código lo siguiente y veras un error en la
-          salida esperada:
-
-          <ul style="list-style: none">
-            <li class="code-simple">printf("Saludo: %s\n", saludoLiteral);</li>
-            <li class="code-simple">printf("Saludo: %s\n", saludo);</li>
-          </ul>
-        </div>
-      </aside>
-
-      <h4>Inicialización y Acceso</h4>
-      <table class="table-primary">
-        <thead>
-          <tr>
-            <th>Operación</th>
-            <th>Sintaxis</th>
-            <th>Ejemplo</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Declaración</td>
-            <td class="code-simple">tipo nombre[tamaño];</td>
-            <td class="code-simple">int edades[5];</td>
-          </tr>
-          <tr>
-            <td>Inicialización completa</td>
-            <td class="code-simple">tipo nombre[] = {valores};</td>
-            <td class="code-simple">float notas[] = {4.5, 3.8, 5.0};</td>
-          </tr>
-          <tr>
-            <td>Inicialización parcial</td>
-            <td class="code-simple">tipo nombre[n] = {valores};</td>
-            <td class="code-simple">char buffer[10] = {'H','i'};</td>
-          </tr>
-          <tr>
-            <td>Acceso por índice</td>
-            <td class="code-simple">nombre[indice]</td>
-            <td class="code-simple">printf("Edad: %d\n", edades[0]);</td>
-          </tr>
-          <tr>
-            <td>Modificación</td>
-            <td class="code-simple">nombre[i] = valor;</td>
-            <td class="code-simple">notas[1] = 4.0;</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <aside
-        class="note note-warning"
-        role="note"
-        aria-label="Advertencia importante"
-      >
-        <strong class="note-title">¡Cuidado con los límites!</strong>
-        <div class="note-content">
-          C/C++ <strong>NO verifica</strong> los límites del arreglo. Si accedes
-          a <span class="code-simple">numeros[5]</span>
-          cuando el arreglo es de tamaño 3, el programa puede:
-          <ul>
-            <li>Leer basura de memoria</li>
-            <li>Sobrescribir otras variables</li>
-            <li>Caerse sin explicación (segmentation fault)</li>
-          </ul>
-          ¡Siempre verifica tus índices!
-        </div>
-      </aside>
-    </section>
-
-    <section class="summary-sheet">
-      <h3>Estructura</h3>
-
-      <p>
-        En C/C++, una estructura (<span class="key-feature">struct</span>) es un
-        tipo de dato que agrupa diferentes variables (de igual o distinto tipo)
-        bajo un mismo nombre. Basicamente un<span class="key-feature"
-          >Registro</span
-        >
-        en Pascal, y con esto vamos a traer al viejo amigo
-        <strong>arreglo con tope</strong>, que nos permite manejar colecciones
-        de tamaño variable de manera controlada.
-      </p>
-
-      <aside class="note note-info" role="note" aria-label="Nota informativa">
-        <strong class="note-title">Nota:</strong>
-        <div class="note-content">
-          Recuerada que el arreglo con tope que usabamos en Pascal era un
-          registro, el cual contenia un arreglo mas un valor que reprecentaba la
-          ultima posicion donde se inserto un elemento (tope).
-          <br />
-          <span class="key-feature">Aclaración: </span> Esto para un arreglo
-          estático para uno dinámico también necesitamos el largo del array.
-        </div>
-      </aside>
-
-      <h4>Declaración de un Arreglo con Tope</h4>
-      <div class="code-container">
-        <button
-          class="copy-btn hljs"
-          onclick="copiarCodigo('code3')"
-          aria-label="Copiar código"
-        >
-          Copiar
-          <svg
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 8v3a1 1 0 0 1-1 1H5m11 4h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-7a1 1 0 0 0-1 1v1m4 3v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-7.13a1 1 0 0 1 .24-.65L7.7 8.35A1 1 0 0 1 8.46 8H13a1 1 0 0 1 1 1Z"
-            />
-          </svg>
-        </button>
-        <pre><code class="language-c" id="code3" data-trim>
-            #include &lt;stdio.h&gt;
-
-            // formas Globales de definir variables constantes.
-            // Asi se define una constante en C. 
-            #define CANT_ELEMENTOS = 100;
-            // Opcianlamente: const int CANT_ELEMENTOS = 100;
-
-
-            // Definición de la estructura ArregloConTope
-            struct ArregloConTope {
-                // Arreglo estático con capacidad para 100 elementos
-                int elementos[CANT_ELEMENTOS];
-                // Cantidad actual de elementos válidos (0 significa vacío)
-                unsigned int tope;    
-            };
-
-            int main() {
-                // Declaración e inicialización
-                struct ArregloConTope arr;
-                arr.tope = 0;  // Comenzamos con el arreglo vacío
-        
-                // Agregar elementos
-                arr.elementos[arr.tope] = 10;
-                arr.tope++;
-                
-                arr.elementos[arr.tope] = 20;
-                arr.tope++;
-                
-                arr.elementos[arr.tope] = 30;
-                arr.tope++;
-                
-                // Mostrar elementos
-                printf("Elementos en el arreglo (%d):\n", arr.tope);
-                for(unsigned int i = 0; i &lt; arr.tope; i++) {
-                    printf("  [%d] = %d\n", i, arr.elementos[i]);
-                }
-                
-                return 0;
-            }
-            // Compilación y ejecución:
-            // g++ ./nombreArchivo.cpp -o nombreCompilacion && ./nombreCompilacion
-        </code></pre>
-      </div>
-
-      <aside class="note note-info" role="note" aria-label="Nota importante">
-        <strong class="note-title">
-          Nota: ¿Por qué usar unsigned int para el tope?
-        </strong>
-        <div class="note-content">
-          Usamos <code>unsigned int</code> porque el tope representa una
-          <strong>cantidad</strong> (nunca puede ser negativo). Esto también nos
-          da un rango mayor de valores positivos. Recuerda:
-          <span class="code-simple">unsigned int</span> va de 0 a 4,294,967,295.
-        </div>
-      </aside>
-
-      <h4>Operaciones Básicas con Arreglo con Tope</h4>
-
-      <table class="table-primary">
-        <thead>
-          <tr>
-            <th>Operación</th>
-            <th>Código</th>
-            <th>Descripción</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Inicializar</td>
-            <td class="code-simple">arr.tope = 0;</td>
-            <td>Prepara el arreglo para su uso (vacío)</td>
-          </tr>
-          <tr>
-            <td>Agregar (si hay espacio)</td>
-            <td class="code-simple">
-              if(arr.tope &lt; 100) {<br />
-              &nbsp;&nbsp;arr.elementos[arr.tope] = valor;<br />
-              &nbsp;&nbsp;arr.tope++;<br />
+        <pre><code class="language-c" data-trim>
+              #include &lt;stdio.h&gt;
+              int main() {
+                  printf("Hola Mundo en C \n");
+                  bool u = true;
+                  return 0;
               }
-            </td>
-            <td>Verifica capacidad antes de agregar</td>
-          </tr>
-          <tr>
-            <td>Eliminar último</td>
-            <td class="code-simple">
-              if(arr.tope &gt; 0) {<br />
-              &nbsp;&nbsp;arr.tope--;<br />
-              }
-            </td>
-            <td>
-              Reduce el tope (el elemento sigue persistiendo memoria <br />
-              pero no se considera válido)
-            </td>
-          </tr>
-          <tr>
-            <td>Buscar elemento</td>
-            <td class="code-simple">
-              unsigned int i = 0;
-              <br />
-              while(i &lt; arr.tope && <br />
-              arr.elemento[i] != buscado){ <br />
-              i++; <br />
-              }
-            </td>
-            <td>Recorre solo los elementos válidos o hasta encontrarlo</td>
-          </tr>
-          <tr>
-            <td>Verificar vacío</td>
-            <td class="code-simple">arr.tope == 0</td>
-            <td>True si no hay elementos</td>
-          </tr>
-          <tr>
-            <td>Verificar lleno</td>
-            <td class="code-simple">arr.tope == 100</td>
-            <td>True si no hay más espacio</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <aside
-        class="note note-exercise"
-        role="note"
-        aria-label="Ejercicio práctico"
-      >
-        <strong class="note-title"
-          >Ejercicio: Implementar funciones básicas</strong
-        >
-        <div class="note-content">
-          <p>
-            Completa las siguientes funciones para un arreglo con tope de
-            enteros:
-          </p>
-
-          <div class="code-container">
-            <pre><code class="language-c" data-trim>
-                struct ArregloEnteros {
-                    int datos[50];
-                    unsigned int tope;
-                };
-
-                // 1. Función para inicializar el arreglo (vacío)
-                void inicializar(struct ArregloEnteros *arr);
-
-                // 2. Función para agregar un elemento (si hay espacio)
-                int agregar(struct ArregloEnteros *arr, int valor);
-
-                // 3. Función para eliminar el último elemento
-                int eliminarUltimo(struct ArregloEnteros *arr);
-
-                // 4. Función para buscar un elemento (devuelve posición o -1)
-                int buscar(const struct ArregloEnteros *arr, int valor);
-
-                // 5. Función para insertar en una posición específica
-                int insertarEn(struct ArregloEnteros *arr, int pos, int valor);
-            </code></pre>
-          </div>
-
-          <p>
-            <a href="#" class="link-simple exercise">Ver solución propuesta</a>
-          </p>
-        </div>
-      </aside>
-    </section>
-
-    <section class="summary-sheet">
-      <h3>Memoria Dinámica Punteros en C/C++</h3>
-      <p>
-        En el curso de Programación 1 seguramente dieron Punteros y memoria
-        dinámica pero tomare como que no lo hicieron y habría que explicarlo
-        desde un inicio completamente.
-      </p>
-      <p>
-        De la forma mas basica un Puntero es un tipo de variable que guarda la
-        direccion de memoria de otro espacio de memoria. Una metafora muy tipica
-        es la del edificio, suponiendo que la memoria es un edificio los
-        punteros son los timbres que estan en la puerta cada uno con un numero
-        indicado a que departamento apunta dicho timbre.
-      </p>
-      <h4>Declaracion basica de punteros</h4>
-      <div class="code-container">
-        <button
-          class="copy-btn hljs"
-          onclick="copiarCodigo('code4')"
-          aria-label="Copiar código"
-        >
-          Copiar
-          <svg
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 8v3a1 1 0 0 1-1 1H5m11 4h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-7a1 1 0 0 0-1 1v1m4 3v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-7.13a1 1 0 0 1 .24-.65L7.7 8.35A1 1 0 0 1 8.46 8H13a1 1 0 0 1 1 1Z"
-            />
-          </svg>
-        </button>
-        <pre><code class="language-c" id="code4" data-trim>
-            #include &lt;stdio.h&gt;
-
-            void sumar_cuatro(int &numero) { // Parámetro de Referencia.
-              numero += 4; // Facilidades C/C++
-              printf("Sumar 4 : %d\n", numero);
-            }
-
-            void sumar_tres(int numero) { // Parámetro de Valor
-              numero = numero + 3; // como en Pascal se hacia la suma.
-              printf("Sumar tres : %d\n", numero);
-            }
-
-            int main()
-            {
-              int numero = 10;
-              printf("Origen: %d\n", numero);
-
-              sumar_cuatro(numero);
-              printf("Luego de sumar 4 : %d\n", numero);
-
-              sumar_tres(numero);
-              printf("Luego de sumar 3 : %d\n", numero);
-              printf("********FIN********\n");
-              return 0;
-            }
-            // Compilación y ejecución:
-            // g++ ./nombreArchivo.cpp -o nombreCompilacion && ./nombreCompilacion
-        </code></pre>
+      </code></pre>
       </div>
     </section>
-
-    <section class="summary-sheet">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempora
-      eius mollitia, voluptatum quidem placeat voluptates ratione velit
-      reprehenderit sunt doloremque dignissimos iure accusamus aliquid nihil
-      officia debitis quas maxime. Dignissimos debitis totam nemo cum et
-      accusantium tempora impedit! Commodi odit aliquid tenetur error sint.
-      Enim, dolor odio rerum excepturi facilis quibusdam maxime aspernatur ullam
-      officia aut expedita sequi eius? Culpa quaerat unde quo deleniti expedita
-      totam voluptates enim in. Quia vel deleniti odit sint incidunt atque
-      similique officia laborum aperiam deserunt ipsam, sunt doloribus nemo
-      architecto excepturi vitae temporibus? Ea maiores nulla commodi dolores
-      iure doloremque quae at sit, recusandae expedita dolorem quas,
-      necessitatibus, nisi illo fuga qui? Minus mollitia ex quis hic neque
-      necessitatibus perspiciatis, ipsam eligendi nulla. Aliquam distinctio
-      dolorum nobis accusantium nostrum repellat amet tempore odio aliquid, ut
-      aperiam quos animi sequi fugiat eius alias provident quisquam quidem.
-      Voluptatum laborum incidunt omnis saepe impedit dolores amet. Eos nihil
-      temporibus perspiciatis natus cumque ea, rerum illo deserunt tenetur?
-      Culpa accusantium velit aperiam, consequatur nulla ex reprehenderit eum
-      sint dolor maiores quaerat molestias minus suscipit fuga, vel atque!
-      Asperiores a natus dolorum quibusdam corporis, accusamus, ipsam libero
-      commodi voluptas magnam, consectetur neque! Porro ad laborum excepturi,
-      expedita veniam eius et iusto nam sapiente vero dolore amet maiores culpa.
-      Ex sunt optio architecto fuga. Impedit numquam, possimus porro eum sit
-      quisquam exercitationem voluptate voluptatum similique quis ut, temporibus
-      ducimus assumenda reiciendis! Atque, optio quos earum veniam nisi dolor
-      distinctio. Quis in repudiandae incidunt libero sit, vero, provident sed
-      non fugit recusandae dicta ut sapiente error deleniti voluptatum
-      doloremque mollitia quam iure voluptatem natus! Ab vel voluptatem tenetur
-      numquam voluptatibus. Esse incidunt totam amet quia aut qui provident, ea
-      ab. Officiis accusantium nulla, reprehenderit tempore vero consectetur
-      cumque at itaque sequi deserunt consequatur ducimus debitis aspernatur
-      necessitatibus vitae, eum placeat! Eum magni magnam excepturi debitis,
-      dolor, repellat sapiente beatae asperiores fugit voluptatem at animi nihil
-      laboriosam explicabo reiciendis fugiat cupiditate, amet recusandae
-      voluptatum ratione inventore? Molestias dolorem quia officia. Fugiat.
-      Corporis repellat voluptate sint amet dolores perferendis exercitationem
-      itaque dicta, labore temporibus impedit facilis in possimus ipsam qui
-      sequi sit laborum quidem magni, voluptatibus accusamus omnis vero.
-      Suscipit, voluptate dolorum? Id praesentium dolores delectus provident,
-      nostrum aliquid magnam, nesciunt a amet sed quibusdam? Soluta architecto
-      assumenda labore praesentium error modi eum, eveniet hic neque minima
-      molestiae cum similique quo possimus. Ullam provident laboriosam nesciunt
-      reprehenderit magnam adipisci porro, dolorem natus quidem vitae nobis
-      asperiores! Illo obcaecati omnis magni doloremque? Ab consectetur
-      provident ratione neque. Magni beatae saepe id asperiores et. Maiores,
-      quia ab numquam aliquam in ut ipsa explicabo, voluptatum quasi ratione
-      sapiente. Harum dolor in illum placeat, provident cumque sit, deleniti
-      eaque dolorem dolorum nisi eligendi veritatis aliquid adipisci. Illum
-      placeat voluptate necessitatibus, quisquam aperiam temporibus deleniti
-      molestias consectetur doloremque saepe vitae officiis consequuntur!
-      Cupiditate soluta laborum modi assumenda itaque, ullam dolorum laudantium
-      quo consequatur aliquid quae? Blanditiis, doloremque! Quos voluptatibus,
-      ipsam consequatur fuga dicta odit illo deserunt praesentium architecto
-      asperiores obcaecati delectus dolorum qui, ipsa aperiam ratione sint et
-      harum iste quae ducimus quo? Odio architecto consequuntur facere. Autem,
-      porro quo error facilis reiciendis delectus pariatur. Deserunt perferendis
-      unde, excepturi, qui consequuntur atque facere quos dolorem necessitatibus
-      ducimus, natus et. Necessitatibus iure nobis saepe, voluptatibus ipsam
-      aperiam odit. Hic dicta eaque obcaecati tenetur impedit eveniet facilis
-      dolor omnis, quasi optio iste officia nulla, doloremque vel autem rem ad
-      totam accusantium nihil mollitia ullam voluptate quidem libero modi?
-      Quasi. Illo sapiente, facere, repellendus iure facilis explicabo tempora
-      adipisci dolorem possimus quibusdam inventore. Perspiciatis culpa, saepe
-      consectetur perferendis consequatur sapiente facilis deleniti odio,
-      cupiditate nam, excepturi assumenda vitae nostrum error.
-    </section>
-
-    <section class="summary-sheet">
-      <h3>Visualización de Estructuras de Datos con Vis-Network</h3>
-      <p>
-        Las estructuras de datos lineales como listas enlazadas, pilas y colas
-        se pueden visualizar de manera interactiva usando vis-network. Esto nos
-        ayuda a comprender mejor cómo funcionan los punteros y las conexiones
-        entre nodos.
-      </p>
-
-      <h4>Lista Simplemente Enlazada</h4>
-      <p>
-        Una lista enlazada es una estructura donde cada nodo apunta al
-        siguiente. El último nodo apunta a
-        <span class="key-feature">NULL</span>.
-      </p>
-
-      <div
-        style="
-          width: 100%;
-          height: 400px;
-          border: 2px solid #667eea;
-          border-radius: 8px;
-          margin: 20px 0;
-        "
-      >
-        <div id="lista-simple" style="width: 100%; height: 100%"></div>
-      </div>
-
-      <div class="code-container">
-        <button
-          class="copy-btn hljs"
-          onclick="copiarCodigo('code-lista-simple')"
-          aria-label="Copiar código"
-        >
-          Copiar
-          <svg
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 8v3a1 1 0 0 1-1 1H5m11 4h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-7a1 1 0 0 0-1 1v1m4 3v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-7.13a1 1 0 0 1 .24-.65L7.7 8.35A1 1 0 0 1 8.46 8H13a1 1 0 0 1 1 1Z"
-            />
-          </svg>
-        </button>
-        <pre><code class="language-c" id="code-lista-simple" data-trim>
-      struct Nodo {
-          int dato;
-          Nodo* siguiente;
-      };
-
-      // Crear lista: 10 -> 20 -> 30 -> NULL
-      Nodo* head = new Nodo{10, NULL};
-      head->siguiente = new Nodo{20, NULL};
-      head->siguiente->siguiente = new Nodo{30, NULL};
-    </code></pre>
-      </div>
-
-      <aside class="note note-info" role="note" aria-label="Nota informativa">
-        <strong class="note-title">Interacción:</strong>
-        <div class="note-content">
-          Haz <strong>doble clic</strong> en cualquier nodo para ver el valor
-          que almacena. Puedes arrastrar los nodos para reorganizar la
-          visualización.
-        </div>
-      </aside>
-
-      <h4>Lista Doblemente Enlazada</h4>
-      <p>
-        En una lista doblemente enlazada, cada nodo tiene dos punteros: uno al
-        siguiente y otro al anterior, permitiendo recorrer la lista en ambas
-        direcciones.
-      </p>
-
-      <div
-        style="
-          width: 100%;
-          height: 400px;
-          border: 2px solid #4ecdc4;
-          border-radius: 8px;
-          margin: 20px 0;
-        "
-      >
-        <div id="lista-doble" style="width: 100%; height: 100%"></div>
-      </div>
-
-      <div class="code-container">
-        <button
-          class="copy-btn hljs"
-          onclick="copiarCodigo('code-lista-doble')"
-          aria-label="Copiar código"
-        >
-          Copiar
-          <svg
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 8v3a1 1 0 0 1-1 1H5m11 4h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-7a1 1 0 0 0-1 1v1m4 3v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-7.13a1 1 0 0 1 .24-.65L7.7 8.35A1 1 0 0 1 8.46 8H13a1 1 0 0 1 1 1Z"
-            />
-          </svg>
-        </button>
-        <pre><code class="language-c" id="code-lista-doble" data-trim>
-      struct NodoDoble {
-          int dato;
-          NodoDoble* siguiente;
-          NodoDoble* anterior;
-      };
-
-      // Crear lista: NULL <- 5 <-> 15 <-> 25 -> NULL
-      NodoDoble* head = new NodoDoble{5, NULL, NULL};
-      head->siguiente = new NodoDoble{15, NULL, head};
-      head->siguiente->siguiente = new NodoDoble{25, NULL, head->siguiente};
-    </code></pre>
-      </div>
-
-      <h4>Lista Circular</h4>
-      <p>
-        Una lista circular es aquella donde el último nodo apunta de vuelta al
-        primero, formando un ciclo. No existe un final definido (NULL).
-      </p>
-
-      <div
-        style="
-          width: 100%;
-          height: 400px;
-          border: 2px solid #ffa07a;
-          border-radius: 8px;
-          margin: 20px 0;
-        "
-      >
-        <div id="lista-circular" style="width: 100%; height: 100%"></div>
-      </div>
-
-      <div class="code-container">
-        <button
-          class="copy-btn hljs"
-          onclick="copiarCodigo('code-lista-circular')"
-          aria-label="Copiar código"
-        >
-          Copiar
-          <svg
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 8v3a1 1 0 0 1-1 1H5m11 4h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-7a1 1 0 0 0-1 1v1m4 3v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-7.13a1 1 0 0 1 .24-.65L7.7 8.35A1 1 0 0 1 8.46 8H13a1 1 0 0 1 1 1Z"
-            />
-          </svg>
-        </button>
-        <pre><code class="language-c" id="code-lista-circular" data-trim>
-      struct NodoCircular {
-          int dato;
-          NodoCircular* siguiente;
-      };
-
-      // Crear lista circular: 7 -> 14 -> 21 -> (vuelve a 7)
-      NodoCircular* head = new NodoCircular{7, NULL};
-      head->siguiente = new NodoCircular{14, NULL};
-      head->siguiente->siguiente = new NodoCircular{21, head}; // Apunta al inicio
-    </code></pre>
-      </div>
-
-      <aside
-        class="note note-warning"
-        role="note"
-        aria-label="Advertencia importante"
-      >
-        <strong class="note-title">¡Cuidado con las listas circulares!</strong>
-        <div class="note-content">
-          Al recorrer una lista circular, debes tener cuidado de no caer en un
-          <strong>bucle infinito</strong>. Siempre verifica cuándo has dado la
-          vuelta completa (por ejemplo, guardando el nodo inicial y comparando).
-        </div>
-      </aside>
-
-      <h4>Árbol Binario</h4>
-      <p>
-        Un árbol binario es una estructura jerárquica donde cada nodo puede
-        tener hasta dos hijos: izquierdo y derecho.
-      </p>
-
-      <div
-        style="
-          width: 100%;
-          height: 500px;
-          border: 2px solid #98d8c8;
-          border-radius: 8px;
-          margin: 20px 0;
-        "
-      >
-        <div id="arbol-binario" style="width: 100%; height: 100%"></div>
-      </div>
-
-      <div class="code-container">
-        <button
-          class="copy-btn hljs"
-          onclick="copiarCodigo('code-arbol')"
-          aria-label="Copiar código"
-        >
-          Copiar
-          <svg
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 8v3a1 1 0 0 1-1 1H5m11 4h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-7a1 1 0 0 0-1 1v1m4 3v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-7.13a1 1 0 0 1 .24-.65L7.7 8.35A1 1 0 0 1 8.46 8H13a1 1 0 0 1 1 1Z"
-            />
-          </svg>
-        </button>
-        <pre><code class="language-c" id="code-arbol" data-trim>
-      struct NodoArbol {
-          int dato;
-          NodoArbol* izquierdo;
-          NodoArbol* derecho;
-      };
-
-      // Crear árbol binario
-      NodoArbol* raiz = new NodoArbol{50, NULL, NULL};
-      raiz->izquierdo = new NodoArbol{30, NULL, NULL};
-      raiz->derecho = new NodoArbol{70, NULL, NULL};
-      raiz->izquierdo->izquierdo = new NodoArbol{20, NULL, NULL};
-      raiz->izquierdo->derecho = new NodoArbol{40, NULL, NULL};
-    </code></pre>
-      </div>
-
-      <script>
-        // ==========================================
-        // LISTA SIMPLEMENTE ENLAZADA
-        // ==========================================
-        (function () {
-          var nodes = new vis.DataSet([
-            {
-              id: 1,
-              label: "Head\n10",
-              x: -200,
-              y: 0,
-              color: "#FF6B6B",
-              value: 10,
-              expanded: false,
-            },
-            {
-              id: 2,
-              label: "20",
-              x: 0,
-              y: 0,
-              color: "#4ECDC4",
-              value: 20,
-              expanded: false,
-            },
-            {
-              id: 3,
-              label: "30",
-              x: 200,
-              y: 0,
-              color: "#45B7D1",
-              value: 30,
-              expanded: false,
-            },
-            {
-              id: 4,
-              label: "NULL",
-              x: 400,
-              y: 0,
-              color: "#95a5a6",
-              shape: "ellipse",
-            },
-          ]);
-
-          var edges = new vis.DataSet([
-            { from: 1, to: 2, arrows: "to", label: "sig" },
-            { from: 2, to: 3, arrows: "to", label: "sig" },
-            { from: 3, to: 4, arrows: "to", label: "sig" },
-          ]);
-
-          var container = document.getElementById("lista-simple");
-          var data = { nodes: nodes, edges: edges };
-          var options = {
-            nodes: {
-              shape: "box",
-              font: { size: 14, color: "#ffffff" },
-              borderWidth: 2,
-              shadow: true,
-              physics: false,
-            },
-            edges: {
-              width: 2,
-              color: { color: "#848484" },
-              smooth: false,
-              font: { size: 12, align: "top" },
-              arrows: { to: { enabled: true, scaleFactor: 1.2 } },
-            },
-            physics: { enabled: false },
-            interaction: { dragNodes: true, dragView: true, zoomView: true },
-          };
-
-          var network = new vis.Network(container, data, options);
-
-          network.on("doubleClick", function (params) {
-            if (params.nodes.length > 0 && params.nodes[0] !== 4) {
-              var nodeId = params.nodes[0];
-              var node = nodes.get(nodeId);
-              node.expanded = !node.expanded;
-
-              if (node.expanded) {
-                var originalLabel = node.label.split("\n")[0];
-                node.label = originalLabel + "\n📦 " + node.value;
-              } else {
-                node.label = node.label.split("\n")[0];
-              }
-              nodes.update(node);
-            }
-          });
-        })();
-
-        // ==========================================
-        // LISTA DOBLEMENTE ENLAZADA
-        // ==========================================
-        (function () {
-          var nodes = new vis.DataSet([
-            {
-              id: 1,
-              label: "NULL",
-              x: -300,
-              y: 0,
-              color: "#95a5a6",
-              shape: "ellipse",
-            },
-            {
-              id: 2,
-              label: "Head\n5",
-              x: -100,
-              y: 0,
-              color: "#FF6B6B",
-              value: 5,
-              expanded: false,
-            },
-            {
-              id: 3,
-              label: "15",
-              x: 100,
-              y: 0,
-              color: "#4ECDC4",
-              value: 15,
-              expanded: false,
-            },
-            {
-              id: 4,
-              label: "25",
-              x: 300,
-              y: 0,
-              color: "#45B7D1",
-              value: 25,
-              expanded: false,
-            },
-            {
-              id: 5,
-              label: "NULL",
-              x: 500,
-              y: 0,
-              color: "#95a5a6",
-              shape: "ellipse",
-            },
-          ]);
-
-          var edges = new vis.DataSet([
-            { from: 1, to: 2, arrows: "to", label: "ant" },
-            { from: 2, to: 3, arrows: "to", label: "sig" },
-            { from: 3, to: 2, arrows: "to", label: "ant" },
-            { from: 3, to: 4, arrows: "to", label: "sig" },
-            { from: 4, to: 3, arrows: "to", label: "ant" },
-            { from: 4, to: 5, arrows: "to", label: "sig" },
-          ]);
-
-          var container = document.getElementById("lista-doble");
-          var data = { nodes: nodes, edges: edges };
-          var options = {
-            nodes: {
-              shape: "box",
-              font: { size: 14, color: "#ffffff" },
-              borderWidth: 2,
-              shadow: true,
-              physics: false,
-            },
-            edges: {
-              width: 2,
-              color: { color: "#848484" },
-              smooth: { enabled: true, type: "curvedCW", roundness: 0.2 },
-              font: { size: 11, align: "top" },
-              arrows: { to: { enabled: true, scaleFactor: 1 } },
-            },
-            physics: { enabled: false },
-            interaction: { dragNodes: true, dragView: true, zoomView: true },
-          };
-
-          var network = new vis.Network(container, data, options);
-
-          network.on("doubleClick", function (params) {
-            if (
-              params.nodes.length > 0 &&
-              params.nodes[0] !== 1 &&
-              params.nodes[0] !== 5
-            ) {
-              var nodeId = params.nodes[0];
-              var node = nodes.get(nodeId);
-              node.expanded = !node.expanded;
-
-              if (node.expanded) {
-                var originalLabel = node.label.split("\n")[0];
-                node.label = originalLabel + "\n📦 " + node.value;
-              } else {
-                node.label = node.label.split("\n")[0];
-              }
-              nodes.update(node);
-            }
-          });
-        })();
-
-        // ==========================================
-        // LISTA CIRCULAR
-        // ==========================================
-        (function () {
-          var nodes = new vis.DataSet([
-            {
-              id: 1,
-              label: "Head\n7",
-              x: -200,
-              y: 100,
-              color: "#FF6B6B",
-              value: 7,
-              expanded: false,
-            },
-            {
-              id: 2,
-              label: "14",
-              x: 0,
-              y: -100,
-              color: "#4ECDC4",
-              value: 14,
-              expanded: false,
-            },
-            {
-              id: 3,
-              label: "21",
-              x: 200,
-              y: 100,
-              color: "#45B7D1",
-              value: 21,
-              expanded: false,
-            },
-          ]);
-
-          var edges = new vis.DataSet([
-            { from: 1, to: 2, arrows: "to", label: "sig" },
-            { from: 2, to: 3, arrows: "to", label: "sig" },
-            {
-              from: 3,
-              to: 1,
-              arrows: "to",
-              label: "sig",
-              color: { color: "#e74c3c" },
-            },
-          ]);
-
-          var container = document.getElementById("lista-circular");
-          var data = { nodes: nodes, edges: edges };
-          var options = {
-            nodes: {
-              shape: "box",
-              font: { size: 14, color: "#ffffff" },
-              borderWidth: 2,
-              shadow: true,
-              physics: false,
-            },
-            edges: {
-              width: 2,
-              color: { color: "#848484" },
-              smooth: { enabled: true, type: "curvedCW", roundness: 0.3 },
-              font: { size: 12, align: "middle" },
-              arrows: { to: { enabled: true, scaleFactor: 1.2 } },
-            },
-            physics: { enabled: false },
-            interaction: { dragNodes: true, dragView: true, zoomView: true },
-          };
-
-          var network = new vis.Network(container, data, options);
-
-          network.on("doubleClick", function (params) {
-            if (params.nodes.length > 0) {
-              var nodeId = params.nodes[0];
-              var node = nodes.get(nodeId);
-              node.expanded = !node.expanded;
-
-              if (node.expanded) {
-                var originalLabel = node.label.split("\n")[0];
-                node.label = originalLabel + "\n📦 " + node.value;
-              } else {
-                node.label = node.label.split("\n")[0];
-              }
-              nodes.update(node);
-            }
-          });
-        })();
-
-        // ==========================================
-        // ÁRBOL BINARIO
-        // ==========================================
-        (function () {
-          var nodes = new vis.DataSet([
-            {
-              id: 1,
-              label: "Raíz\n50",
-              x: 0,
-              y: -150,
-              color: "#FF6B6B",
-              value: 50,
-              expanded: false,
-              level: 0,
-            },
-            {
-              id: 2,
-              label: "30",
-              x: -200,
-              y: 0,
-              color: "#4ECDC4",
-              value: 30,
-              expanded: false,
-              level: 1,
-            },
-            {
-              id: 3,
-              label: "70",
-              x: 200,
-              y: 0,
-              color: "#45B7D1",
-              value: 70,
-              expanded: false,
-              level: 1,
-            },
-            {
-              id: 4,
-              label: "20",
-              x: -300,
-              y: 150,
-              color: "#98D8C8",
-              value: 20,
-              expanded: false,
-              level: 2,
-            },
-            {
-              id: 5,
-              label: "40",
-              x: -100,
-              y: 150,
-              color: "#F7DC6F",
-              value: 40,
-              expanded: false,
-              level: 2,
-            },
-          ]);
-
-          var edges = new vis.DataSet([
-            { from: 1, to: 2, arrows: "to", label: "izq" },
-            { from: 1, to: 3, arrows: "to", label: "der" },
-            { from: 2, to: 4, arrows: "to", label: "izq" },
-            { from: 2, to: 5, arrows: "to", label: "der" },
-          ]);
-
-          var container = document.getElementById("arbol-binario");
-          var data = { nodes: nodes, edges: edges };
-          var options = {
-            nodes: {
-              shape: "circle",
-              size: 30,
-              font: { size: 13, color: "#ffffff" },
-              borderWidth: 2,
-              shadow: true,
-              physics: false,
-            },
-            edges: {
-              width: 2,
-              color: { color: "#848484" },
-              smooth: false,
-              font: { size: 11, align: "middle" },
-              arrows: { to: { enabled: true, scaleFactor: 1 } },
-            },
-            physics: { enabled: false },
-            interaction: { dragNodes: true, dragView: true, zoomView: true },
-          };
-
-          var network = new vis.Network(container, data, options);
-
-          network.on("doubleClick", function (params) {
-            if (params.nodes.length > 0) {
-              var nodeId = params.nodes[0];
-              var node = nodes.get(nodeId);
-              node.expanded = !node.expanded;
-
-              if (node.expanded) {
-                var originalLabel = node.label.split("\n")[0];
-                node.label = originalLabel + "\n📦 " + node.value;
-              } else {
-                node.label = node.label.split("\n")[0];
-              }
-              nodes.update(node);
-            }
-          });
-        })();
-      </script>
-    </section>
-
-    <script src="JS/redes.js"></script>
     <script src="JS/modulo_copy.js"></script>
   </body>
 </html>

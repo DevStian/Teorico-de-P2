@@ -2,8 +2,10 @@
 *.cpp
 
 # HTML que no quiero subir
-Base.html
-version_1.html
+Privado_1.html
+Privado_2.html
+Privado_3.html
+
 
 # Ejecutables compilados
 CSS/pre

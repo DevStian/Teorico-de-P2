@@ -156,20 +156,3 @@
 .note-danger .note-title {
   color: var(--danger-color);
 }
-
-.data-ex {
-  width: 50%;
-  color: var(--primary-color);
-
-  p {
-    background-color: var(--note-info-bg);
-    padding: 10px 20px;
-    margin: 5px 0 0 0;
-    border-radius: 5px;
-  }
-  summary {
-    cursor: pointer;
-    border-bottom: 2px solid var(--primary-color);
-    font-weight: bold;
-  }
-}
