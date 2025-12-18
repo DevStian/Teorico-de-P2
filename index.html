@@ -28,10 +28,6 @@
 
     <script>
       function initHighlightedCode() {
-        // ejemplo
-        // document.querySelectorAll('td.code-simple').forEach((u) => {
-        //   hljs.highlightElement(u);
-        // });
         document.querySelectorAll("pre code[data-trim]").forEach((block) => {
           const lines = block.textContent.split("\n");
 
@@ -52,7 +48,7 @@
           // aplicar highlight
           hljs.highlightElement(block);
 
-          // 🔥 AHORA sí: reemplazar "\n" visibles
+          // Reemplazar "\n" visibles
           block.innerHTML = block.innerHTML
             .replace(/\\n/g, '<span class="visible-newline">\\n</span>')
             .replace(/\\t/g, '<span class="visible-tab">\\t</span>');
